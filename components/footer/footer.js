@@ -6,9 +6,7 @@ function Footer() {
     <div div className={styled["container"]}>
       <div className={styled["footer"]}>
         <div className={styled["logo"]}>LOGO</div>
-        <div className={styled["greeting"]}>
-          <p>THANKS FOR READING!</p>
-        </div>
+       
       </div>
     </div>
   );

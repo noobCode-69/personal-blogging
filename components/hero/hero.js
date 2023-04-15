@@ -26,7 +26,7 @@ function Hero() {
         "#Ele2",
         { opacity: 0, y: 40, x: 50 },
         { ease: "back.out(1.7)", opacity: 3.5, y: 0, x: 0, duration: 0.75 },
-        "<%"
+        "<"
       );
       tl.fromTo(
         "#Ele3",

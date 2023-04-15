@@ -3,6 +3,7 @@ import styled from "@/styles/Home.module.css";
 import Hero from "@/components/hero/hero";
 import HomeContent from "@/components/homeContent/homeContent";
 import Footer from "@/components/footer/footer";
+import Contact from "@/components/contact/contact";
 export default function Home(props) {
   const { blogs, populars, categories } = props;
   return (
@@ -17,7 +18,8 @@ export default function Home(props) {
       </Head>
       <Hero />
       <HomeContent categories={categories} blogs={blogs} populars={populars} />
-      <Footer/>
+      <Contact/>
+      <Footer />
     </div>
   );
 }

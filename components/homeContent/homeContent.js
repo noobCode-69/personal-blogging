@@ -4,7 +4,7 @@ import Layout from "../layout/layout";
 import styled from "./homeContent.module.css";
 import PopularCategories from "../popularCategories/popularCategories";
 function HomeContent(props) {
-  const { blogs, populars , categories } = props;
+  const { blogs, populars, categories } = props;
 
   return (
     <Layout>
@@ -27,23 +27,23 @@ function HomeContent(props) {
         </div>
 
         <div className={styled["content-right"]}>
-          <div className={styled['top']}>
-            <PopularCategories categories={categories}/>
+          <div className={styled["top"]}>
+            <PopularCategories categories={categories} />
           </div>
-          <div className={styled['bottom']}>
-          <p className={styled["heading"]}>POPULAR CONTENT</p>
-          <ul className={styled["populars"]}>
-            {populars.map((popular) => {
-              const { id, title } = popular;
-              return (
-                <Link key={id} href={""}>
-                  <li className={styled["popular"]}>
-                    <h4>{title}</h4>
-                  </li>
-                </Link>
-              );
-            })}
-          </ul>
+          <div className={styled["bottom"]}>
+            <p className={styled["heading"]}>POPULAR CONTENT</p>
+            <ul className={styled["populars"]}>
+              {populars.map((popular) => {
+                const { id, title } = popular;
+                return (
+                  <Link key={id} href={""}>
+                    <li className={styled["popular"]}>
+                      <h4>{title}</h4>
+                    </li>
+                  </Link>
+                );
+              })}
+            </ul>
           </div>
         </div>
       </div>
