@@ -1,0 +1,70 @@
+@import url("../../styles/colors.css");
+
+.navbar-container {
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--dark-blue);
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4rem;
+}
+
+.link {
+  list-style-type: none;
+  position: relative;
+  padding-bottom: 0.4rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dark-blue);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.link a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: 0;
+  left: -100%;
+  background-color: var(--dark-blue);
+}
+
+.link a:hover::before {
+  animation-name: move-left-to-right;
+  animation-duration: 0.25s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.link a:focus,
+.link a:hover {
+  color: inherit;
+}
+
+@keyframes move-left-to-right {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}

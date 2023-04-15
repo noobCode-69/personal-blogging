@@ -1,0 +1,64 @@
+@import url("../../styles/colors.css");
+
+.hero-container {
+  background-color: var(--light-blue);
+}
+
+.hero {
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  padding-left: 0;
+  padding-top: 5rem;
+  color: var(--dark-blue);
+}
+
+.hero h1 {
+  font-size: calc(1.5rem + 1vw);
+  color: var(--dark-blue);
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.headings {
+  gap: 2rem;
+  display: flex;
+}
+
+.left {
+  display: flex;
+  overflow: hidden;
+  gap: 0.15rem;
+}
+
+.paragraph-wrapper {
+  overflow: hidden;
+  text-align: justify;
+}
+
+.avatar-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 75px;
+}
+
+.svg-container {
+  right: 10rem;
+  position: absolute;
+}
+
+.curve {
+  display: flex;
+}
+
+.curve svg {
+  width: 100%;
+  fill: white;
+}

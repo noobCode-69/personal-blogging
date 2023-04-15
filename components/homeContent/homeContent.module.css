@@ -1,7 +1,6 @@
-@import url("../styles/colors.css");
-
 .content {
-  padding-top: 2rem;
+  /* padding-top: 2rem; */
+  padding: 2rem 0;
   display: flex;
   gap: 1rem;
   justify-content: space-between;
@@ -60,7 +59,7 @@
 }
 
 .popular {
-  list-style-type: '->';
+  list-style-type: "->";
   padding-left: 1rem;
 }
 
@@ -72,4 +71,3 @@
   font-size: 1.15rem;
   font-weight: 600;
 }
-

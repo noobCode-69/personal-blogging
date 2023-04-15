@@ -1,0 +1,9 @@
+.my-app {
+  --color-background: #ffffff;
+  --light-blue: #bfdef2;
+  --dark-blue: #00235B;
+  --dark-violet : #4433ff;
+  --dark-red: #e60067;
+  --color-text: #0a0c10;
+  --color-text-heading: rgb(33, 35, 44)
+}
