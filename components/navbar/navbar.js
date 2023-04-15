@@ -4,11 +4,7 @@ import styled from "./navbar.module.css";
 import Layout from "../layout/layout";
 const links = [
   {
-    text: "Latest",
-    url: "/latest",
-  },
-  {
-    text: "Posts",
+    text: "All Posts",
     url: "/posts",
   },
   {

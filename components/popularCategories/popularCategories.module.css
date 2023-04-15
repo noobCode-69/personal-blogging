@@ -1,0 +1,32 @@
+@import url("../../styles/colors.css");
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.heading {
+  color: var(--dark-red);
+  font-size: 1.25;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.categories {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax( 100px, 1fr));
+  grid-gap: 0.5rem;
+}
+
+.category {
+  padding: 0.5rem 1rem;
+  background-color: var(--light-blue);
+  font-weight: bold;
+  border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+}

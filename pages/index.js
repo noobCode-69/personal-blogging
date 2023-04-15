@@ -1,11 +1,10 @@
 import Head from "next/head";
-import Link from "next/link";
 import styled from "@/styles/Home.module.css";
-import Layout from "@/components/layout/layout";
 import Hero from "@/components/hero/hero";
 import HomeContent from "@/components/homeContent/homeContent";
+import Footer from "@/components/footer/footer";
 export default function Home(props) {
-  const { blogs, populars } = props;
+  const { blogs, populars, categories } = props;
   return (
     <div className={styled["home-container"]}>
       <Head>
@@ -17,7 +16,8 @@ export default function Home(props) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Hero />
-      <HomeContent blogs={blogs} populars={populars} />
+      <HomeContent categories={categories} blogs={blogs} populars={populars} />
+      <Footer/>
     </div>
   );
 }
@@ -99,10 +99,34 @@ export function getServerSideProps() {
     },
   ];
 
+  const categories = [
+    {
+      id: 1,
+      title: "React",
+    },
+    {
+      id: 2,
+      title: "Javascript",
+    },
+    {
+      id: 3,
+      title: "CSS",
+    },
+    {
+      id: 4,
+      title: "React Query",
+    },
+    {
+      id: 5,
+      title: "Next",
+    },
+  ];
+
   return {
     props: {
       blogs: blogs,
       populars: populars,
+      categories: categories,
     },
   };
 }
