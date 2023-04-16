@@ -89,7 +89,8 @@
     display: none;
   }
   .blog p {
-    max-width: 100ch;
+    line-height: normal;
+    /* max-width: 100ch; */
   }
   .blogs-container {
     gap : 3rem;
@@ -100,9 +101,7 @@
 @media (max-width: 650px) {
   .blog p {
     text-align: justify;
-    line-height: 1.25rem;
     font-size: 0.9rem;
-    max-width: 60ch;
   }  
 
   .blogs-container {
