@@ -75,6 +75,21 @@
 }
 
 
+@media (max-width: 650px) {
+  .blog p {
+    text-align: justify;
+    line-height: 1rem;
+    font-size: 0.8rem;
+    max-width: 60ch;
+  }  
+
+  .blogs-container {
+    padding-top: 3rem;
+    gap: 2rem;
+  }
+}
+
+
 
 @media (max-width: 1300px) {
   .content {
