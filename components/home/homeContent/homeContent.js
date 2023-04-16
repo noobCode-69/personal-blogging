@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Layout from "@/components/layout/layout";
 import styled from "./homeContent.module.css";
@@ -18,7 +18,7 @@ function HomeContent(props) {
                 <Link key={id} href={"/"}>
                   <div className={styled["blog"]}>
                     <h3>{title}</h3>
-                    <p>{content.split(' ').slice(0, 45).join(' ')}...</p>
+                    <p>{content.split(" ").slice(0, 40).join(" ")}...</p>
                   </div>
                 </Link>
               );

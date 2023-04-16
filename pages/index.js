@@ -7,7 +7,6 @@ import Contact from "@/components/home/contact/contact";
 
 
 export default function Home(props) {
-  console.log('hello')
   const { blogs, populars, categories } = props;
   return (
     <div className={styled["home-container"]}>
