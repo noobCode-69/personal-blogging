@@ -1,10 +1,13 @@
 import React, { useEffect } from "react";
-import styled from "./contact.module.css";
+import styled from './contact.module.css'
 import Layout from "../../layout/layout";
 import { useRef } from "react";
 import { gsap } from "gsap";
 
 function Contact() {
+
+  console.log(styled);
+
   const containerRef = useRef();
   useEffect(() => {
     const container = containerRef.current;

@@ -7,6 +7,7 @@ import Contact from "@/components/home/contact/contact";
 
 
 export default function Home(props) {
+  console.log('hello')
   const { blogs, populars, categories } = props;
   return (
     <div className={styled["home-container"]}>
@@ -60,7 +61,7 @@ export function getServerSideProps() {
         "I used to teach React at a local coding bootcamp, and I noticed that students kept getting tripped up by the same handful of things. In this article, we're going to go through 9 of the most dastardly gotchas. I'll show you how to solve these common problems, so you can avoid a lot of potential frustration",
     },
     {
-      id: 5,
+      id: 6,
       title: "The End of Front-End Development",
       content:
         "I used to teach React at a local coding bootcamp, and I noticed that students kept getting tripped up by the same handful of things. In this article, we're going to go through 9 of the most dastardly gotchas. I'll show you how to solve these common problems, so you can avoid a lot of potential frustration!",
