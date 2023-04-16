@@ -18,7 +18,7 @@ function HomeContent(props) {
                 <Link key={id} href={"/"}>
                   <div className={styled["blog"]}>
                     <h3>{title}</h3>
-                    <p>{content}</p>
+                    <p>{content.split(' ').slice(0, 45).join(' ')}...</p>
                   </div>
                 </Link>
               );
