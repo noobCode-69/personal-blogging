@@ -1,75 +1,7 @@
 @import url("../styles/colors.css");
 
-.content {
-  padding-top: 2rem;
-  display: flex;
-  gap: 1rem;
-  justify-content: space-between;
-  align-items: flex-start;
-}
 
-.heading {
-  color: var(--dark-red);
-  font-size: 1.25;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
 
-.blogs-container {
-  padding-top: 5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 5rem;
-}
 
-.blog {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1rem;
-}
 
-.blog p {
-  text-align: justify;
-  line-height: 1.5rem;
-  font-size: 1rem;
-  max-width: 60ch;
-}
-
-.blog:hover {
-  cursor: pointer;
-}
-
-.blog:hover h3 {
-  color: var(--dark-violet);
-}
-
-.content-right {
-  width: 350px;
-  flex-shrink: 0;
-  position: sticky;
-  top: 0;
-  padding-top: 3rem;
-}
-
-.populars {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding-top: 3rem;
-}
-
-.popular {
-  list-style-type: '->';
-  padding-left: 1rem;
-}
-
-.popular:hover {
-  color: var(--dark-violet);
-}
-
-.popular h4 {
-  font-size: 1.15rem;
-  font-weight: 600;
-}
 

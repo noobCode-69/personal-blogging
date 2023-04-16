@@ -14,7 +14,7 @@ export default function Home(props) {
         <title>so_hell</title>
         <meta
           name="description"
-          content="Sharing my knowledgeon frontend developement"
+          content="Sharing my knowledge on frontend developement"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" type="image/x-icon" href="/logo.ico"></link>
