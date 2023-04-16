@@ -68,9 +68,23 @@
   fill: white;
 }
 
-@media (max-width: 600px) {
+
+
+
+@media (max-width: 599px) {
   .avatar-container {
-    display: none;
+    padding: 1rem 0;
+    height: auto;
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+  }
+
+  .svg-container {
+    position: static;
+    transform: none;
+    width: 95%;
+    max-width: 300px;
   }
   .hero {
     padding: 1rem;
@@ -86,18 +100,22 @@
   }
 }
 
-@media (max-width: 800px) {
+
+
+@media screen and (min-width: 800px) and (max-width: 1300px)  {
   .svg-container {
-    width: 300px;
-    right: 5%;
+    right: 2.5%;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-25%);
   }
 }
 
-@media (max-width: 1300px) {
+
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
   .svg-container {
-    right: 2.5%;
+    width: 275px;
+    right: 5%;
     top: 50%;
     transform: translateY(-25%);
   }
