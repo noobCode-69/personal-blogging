@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect } from "react";
-import Layout from "../layout/layout";
+import Layout from "@/components/layout/layout";
 import { gsap } from "gsap";
 import { useRef } from "react";
 import styled from "./hero.module.css";

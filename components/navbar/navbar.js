@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import styled from "./navbar.module.css";
 import Layout from "../layout/layout";
+import Logo from "../logo/logo";
 const links = [
   {
     text: "All Posts",
@@ -23,7 +24,9 @@ function Navbar() {
       <div style={{ padding: "2rem 0" }} className={styled["navbar-container"]}>
         <div className={styled["navbar"]}>
           <div className={styled["logo"]}>
-            <Link href={"/"}>LOGO</Link>
+            <Link href={"/"}>
+              <Logo />
+            </Link>
           </div>
           <ul className={styled["links"]}>
             {links.map((link) => {

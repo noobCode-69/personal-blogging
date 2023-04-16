@@ -1,9 +1,11 @@
 import Head from "next/head";
 import styled from "@/styles/Home.module.css";
-import Hero from "@/components/hero/hero";
-import HomeContent from "@/components/homeContent/homeContent";
-import Footer from "@/components/footer/footer";
-import Contact from "@/components/contact/contact";
+import Hero from "@/components/home/hero/hero";
+import HomeContent from "@/components/home/homeContent/homeContent";
+import Footer from "@/components/home/footer/footer";
+import Contact from "@/components/home/contact/contact";
+
+
 export default function Home(props) {
   const { blogs, populars, categories } = props;
   return (
@@ -15,10 +17,11 @@ export default function Home(props) {
           content="Sharing my knowledgeon frontend developement"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/x-icon" href="/logo.ico"></link>
       </Head>
       <Hero />
       <HomeContent categories={categories} blogs={blogs} populars={populars} />
-      <Contact/>
+      <Contact />
       <Footer />
     </div>
   );
