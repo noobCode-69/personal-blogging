@@ -68,7 +68,7 @@
   fill: white;
 }
 
-@media (max-width : 600px) {
+@media (max-width: 600px) {
   .avatar-container {
     display: none;
   }
@@ -80,9 +80,13 @@
   .text-container {
     font-size: 0.9rem;
   }
+
+  .hero h1 {
+    font-size: calc(1rem + 1vw);
+  }
 }
 
-@media (max-width : 800px) {
+@media (max-width: 800px) {
   .svg-container {
     width: 300px;
     right: 5%;
@@ -96,6 +100,5 @@
     right: 2.5%;
     top: 50%;
     transform: translateY(-25%);
-
   }
 }
