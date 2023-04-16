@@ -83,8 +83,7 @@
   .svg-container {
     position: static;
     transform: none;
-    width: 95%;
-    max-width: 300px;
+    width: 75%;
   }
   .hero {
     padding: 1rem;
