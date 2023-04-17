@@ -22,7 +22,7 @@ function HomeContent(props) {
                     {isMobileScreen ? (
                       <p>{content.split(" ").slice(0, 20).join(" ")}...</p>
                     ) : (
-                      <p>{content.split(" ").slice(0, 40).join(" ")}...</p>
+                      <p>{content.split(" ").slice(0, 30).join(" ")}...</p>
                     )}
                   </div>
                 </Link>
