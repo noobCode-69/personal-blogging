@@ -107,6 +107,12 @@
   }
 }
 @media (max-width: 650px) {
+
+  .heading {
+    font-size: 0.9rem;  
+  }
+
+
   .blog p {
     text-align: justify;
     font-size: 0.9rem;
@@ -114,7 +120,7 @@
 
   .blogs-container {
     padding-top: 2.5rem;
-    gap: 3.5rem;
+    gap: 4.5rem;
   }
 
   .content {
