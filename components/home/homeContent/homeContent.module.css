@@ -109,7 +109,7 @@
 @media (max-width: 650px) {
 
   .heading {
-    font-size: 0.9rem;  
+    font-size: 0.8rem;  
   }
 
 
@@ -120,7 +120,7 @@
 
   .blogs-container {
     padding-top: 2.5rem;
-    gap: 4.5rem;
+    gap: 4rem;
   }
 
   .content {
