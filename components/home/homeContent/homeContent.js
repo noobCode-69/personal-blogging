@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { useMediaQuery } from "react-responsive";
 import Link from "next/link";
 import Layout from "@/components/layout/layout";
 import styled from "./homeContent.module.css";
 import PopularCategories from "../popularCategories/popularCategories";
 function HomeContent(props) {
   const { blogs, populars, categories } = props;
-
+  const isMobileScreen = useMediaQuery({ maxWidth: 650 });
   return (
     <Layout>
       <div className={styled["content"]}>
@@ -18,7 +19,11 @@ function HomeContent(props) {
                 <Link key={id} href={"/"}>
                   <div className={styled["blog"]}>
                     <h3>{title}</h3>
-                    <p>{content.split(" ").slice(0, 40).join(" ")}...</p>
+                    {isMobileScreen ? (
+                      <p>{content.split(" ").slice(0, 20).join(" ")}...</p>
+                    ) : (
+                      <p>{content.split(" ").slice(0, 40).join(" ")}...</p>
+                    )}
                   </div>
                 </Link>
               );

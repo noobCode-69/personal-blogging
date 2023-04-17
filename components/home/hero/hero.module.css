@@ -15,7 +15,7 @@
 }
 
 .hero h1 {
-  font-size: calc(1.5rem + 1vw);
+  font-size: calc(1.25rem + 1vw);
   color: var(--dark-blue);
 }
 

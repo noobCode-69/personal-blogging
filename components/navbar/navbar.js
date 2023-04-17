@@ -21,7 +21,7 @@ const links = [
 function Navbar() {
   return (
     <Layout bgColor="#bfdef2">
-      <div style={{ padding: "2rem 0" }} className={styled["navbar-container"]}>
+      <div className={styled["navbar-container"]}>
         <div className={styled["navbar"]}>
           <div className={styled["logo"]}>
             <Link href={"/"}>

@@ -1,6 +1,7 @@
 @import url("../../styles/colors.css");
 
 .navbar-container {
+  padding: 2rem 0 ;
 }
 
 .navbar {
@@ -10,13 +11,6 @@
   align-items: center;
   justify-content: space-between;
   font-size: 1rem;
-}
-
-.logo {
-  /* width: 150px */
-  /* font-size: 1.25rem; */
-  /* font-weight: bold; */
-  /* color: var(--dark-blue); */
 }
 
 .links {
@@ -76,5 +70,11 @@
   }
   .link {
     font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .navbar-container {
+    padding: 2rem 1rem;
   }
 }
