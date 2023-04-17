@@ -27,6 +27,8 @@
   gap: 1rem;
 }
 
+
+
 .blog p {
   text-align: justify;
   line-height: 1.5rem;
@@ -112,7 +114,7 @@
 
   .blogs-container {
     padding-top: 3rem;
-    gap: 4rem;
+    gap: 3.5rem;
   }
 
   .content {
@@ -121,6 +123,10 @@
   }
   .content-left {
     width: 100% ;
+  }
+
+  .blog h3{
+    font-size: 1rem;  
   }
 }
 

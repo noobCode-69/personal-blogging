@@ -41,6 +41,10 @@
   text-align: justify;
 }
 
+.paragraph {
+  line-height: 1.5rem;
+}
+
 .avatar-container {
   position: relative;
   display: flex;
@@ -83,11 +87,11 @@
   .svg-container {
     position: static;
     transform: none;
-    width: 50%;
+    width: 55%;
   }
   .hero {
     padding: 1rem;
-    padding-top: 1.5rem;
+    padding-top: 1.25rem;
     padding-bottom: 2.5rem;
   }
   .text-container {
