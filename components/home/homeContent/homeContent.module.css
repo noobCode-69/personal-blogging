@@ -91,7 +91,7 @@
     display: none;
   }
   .blog p {
-    line-height: 1.75rem;
+    line-height: 1.5rem;
     max-width: 100ch;
   }
   .blogs-container {
@@ -116,7 +116,6 @@
   .blog p {
     text-align: justify;
     font-size: 0.9rem;
-    line-height: 1.5rem;
   }  
 
   .blogs-container {

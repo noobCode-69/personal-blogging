@@ -30,4 +30,8 @@
     .blog-item-container h3{
         font-size: 1.1rem;
     }
+    
+    .blog-item-container p {
+      line-height: 1.5rem;
+    }
 }
