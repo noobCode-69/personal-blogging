@@ -9,3 +9,10 @@
   column-gap: 2rem;
   row-gap: 3rem;
 }
+
+
+@media (max-width: 650px) {
+  .blogs {
+    grid-template-columns: 1fr;
+  }
+}
