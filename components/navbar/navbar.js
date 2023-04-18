@@ -1,27 +1,21 @@
 import React from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import styled from "./navbar.module.css";
 import Layout from "../layout/layout";
 import Logo from "../logo/logo";
-const links = [
-  {
-    text: "All Posts",
-    url: "/posts",
-  },
-  {
-    text: "About me",
-    url: "/about",
-  },
-];
-
-// make a url resolve if url is home => bfColor = "#bfdef2" and padding is "2rem 0"
-// other bgColor : null and padding : "1rem 0"
-// if this is a 404 page do not show navbar
+import links from "./navbar.configs";
 
 function Navbar() {
+  const route = useRouter();
+  const isHomePage = route.pathname == "/";
   return (
-    <Layout bgColor="#bfdef2">
-      <div className={styled["navbar-container"]}>
+    <Layout bgColor={isHomePage ? "#bfdef2" : "#eff1f5"}>
+      <div
+        className={`${styled["navbar-container"]} ${
+          isHomePage == false ? styled["navbar-home"] : ""
+        } `}
+      >
         <div className={styled["navbar"]}>
           <div className={styled["logo"]}>
             <Link href={"/"}>

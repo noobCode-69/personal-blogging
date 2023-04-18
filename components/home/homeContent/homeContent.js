@@ -20,9 +20,9 @@ function HomeContent(props) {
                   <div className={styled["blog"]}>
                     <h3>{title}</h3>
                     {isMobileScreen ? (
-                      <p>{content.split(" ").slice(0, 20).join(" ")}...</p>
+                      <p>{content.split(" ").slice(0, 25).join(" ")}...</p>
                     ) : (
-                      <p>{content.split(" ").slice(0, 30).join(" ")}...</p>
+                      <p>{content}</p>
                     )}
                   </div>
                 </Link>

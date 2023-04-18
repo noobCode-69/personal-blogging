@@ -31,9 +31,9 @@
 
 .blog p {
   text-align: justify;
-  line-height: 1.5rem;
-  font-size: 1rem;
-  max-width: 60ch;
+  line-height: 1.75rem;
+  font-size: 0.95rem;
+  max-width: 65ch;
 }
 
 .blog:hover {
@@ -91,7 +91,7 @@
     display: none;
   }
   .blog p {
-    line-height: normal;
+    line-height: 1.75rem;
     max-width: 100ch;
   }
   .blogs-container {
@@ -116,6 +116,7 @@
   .blog p {
     text-align: justify;
     font-size: 0.9rem;
+    line-height: 1.5rem;
   }  
 
   .blogs-container {
