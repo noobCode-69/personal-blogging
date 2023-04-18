@@ -1,4 +1,4 @@
-import React, { useDebugValue } from "react";
+import React from "react";
 import styled from "./blogsList.module.css";
 import BlogItem from "../blogItem/blogItem";
 function BlogsList({ blogs }) {
