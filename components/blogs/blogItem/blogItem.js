@@ -10,7 +10,7 @@ function BlogItem({ blog }) {
     <Link href={""} className={styled["blog-item-container"]}>
       <h3>{title}</h3>
       {isMobileScreen ? (
-        <p> {content.split(" ").slice(0, 50).join(" ")}...</p>
+        <p> {content.split(" ").slice(0, 40).join(" ")}...</p>
       ) : (
         <p> {content} </p>
       )}
