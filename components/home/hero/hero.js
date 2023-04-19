@@ -76,7 +76,7 @@ function Hero() {
                 className={`${styled["paragraph"]} paragraph`}
               >
                 <p>
-                  I&apos;m a skilled full stack web developer from New Delhi,
+                  I&apos;m a skilled full stack web developer from
                   India, specializing in the MERN stack and Next{" "}
                 </p>
               </div>
