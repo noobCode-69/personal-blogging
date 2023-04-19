@@ -15,7 +15,7 @@
 }
 
 .svg-container {
-  width: 80%;
+  width: 110%;
 }
 
 .svg-container svg {
@@ -29,6 +29,6 @@
   }
 
   .svg-container {
-    width: 60%;
+    width: 90%;
   }
 }

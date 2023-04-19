@@ -13,16 +13,12 @@ function Hero() {
 
     let ctx = gsap.context(() => {
       const tl = gsap.timeline({});
-      tl.fromTo(
-        "#Avatar",
-        { opacity: 0 },
-        { opacity: 2, duration: 3, ease: "power2.out" }
-      );
+
       tl.fromTo(
         "#Ele1",
         { opacity: 0, y: 50, x: -50 },
         { ease: "back.out(1.7)", opacity: 3.5, y: 0, x: 0, duration: 0.75 },
-        "<"
+        "<10%"
       );
       tl.fromTo(
         "#Ele2",
@@ -96,7 +92,7 @@ function Hero() {
             xmlnsXlink="http://www.w3.org/1999/xlink"
           >
             <g id="Group 1">
-              <g id="Avatar" opacity={0}>
+              <g id="Avatar" >
                 <mask
                   id="mask0_2_12"
                   style={{
