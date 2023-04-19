@@ -1,13 +1,22 @@
-.blogs-page-container {
-    min-height: 100vh;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+.blogs-page-parent {
+  padding-top: 5rem;
+}
+
+.blogs-page-parent h2 {
+  padding: 0 0rem 2.5rem 1rem;
+  font-size: 1.5rem;
+}
+
+.blogs {
+  min-height: 100vh;
+  padding-bottom: 5rem;
 }
 
 @media (max-width: 650px) {
-    
-    .blogs-page-container {
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-    }
+  .blogs {
+    padding-bottom: 3rem;
+  }
+  .blogs-page-parent {
+    padding-top: 3rem;
+  }
 }

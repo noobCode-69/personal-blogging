@@ -24,6 +24,7 @@ function HomeContent(props) {
                     ) : (
                       <p>{content}</p>
                     )}
+                    <h4>Read more.</h4>
                   </div>
                 </Link>
               );

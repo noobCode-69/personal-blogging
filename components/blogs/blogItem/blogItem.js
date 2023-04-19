@@ -14,6 +14,7 @@ function BlogItem({ blog }) {
       ) : (
         <p> {content} </p>
       )}
+      <h4>Read more.</h4>
     </Link>
   );
 }

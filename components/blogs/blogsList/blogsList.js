@@ -4,7 +4,7 @@ import BlogItem from "../blogItem/blogItem";
 function BlogsList({ blogs }) {
   return (
     <div className={styled["blogs-list-container"]}>
-      <h2>Blogs</h2>
+      
       <div className={styled["blogs"]}>
         {blogs.map((blog) => {
           const { id } = blog;
