@@ -4,6 +4,8 @@ import { gsap } from "gsap";
 import { useRef } from "react";
 import styled from "./hero.module.css";
 
+
+
 function Hero() {
   const containerRef = useRef();
   useEffect(() => {
