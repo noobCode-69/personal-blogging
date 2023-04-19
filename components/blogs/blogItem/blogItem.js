@@ -4,7 +4,7 @@ import { useMediaQuery } from "react-responsive";
 import styled from "./blogItem.module.css";
 
 function BlogItem({ blog }) {
-  const { id, title, content, tag } = blog;
+  const {  title, content } = blog;
   const isMobileScreen = useMediaQuery({ maxWidth: 650 });
   return (
     <Link href={""} className={styled["blog-item-container"]}>
