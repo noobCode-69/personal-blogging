@@ -4,6 +4,7 @@ import Link from "next/link";
 import Layout from "@/components/layout/layout";
 import styled from "./homeContent.module.css";
 import PopularCategories from "../popularCategories/popularCategories";
+
 function HomeContent(props) {
   const { blogs, populars, categories } = props;
   const isMobileScreen = useMediaQuery({ maxWidth: 650 });
