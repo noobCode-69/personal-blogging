@@ -1,29 +1,28 @@
 @import url("./colors.css");
 
 .blog-container {
-  max-width: 700px;
+  max-width: 750px;
   margin: 0 auto;
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
 
 .blog-container h1 {
-  padding: 0 0 5rem 0;
-  text-align: center;
+  padding: 0 0 3rem 0;
+  font-size: 2.75rem;
 }
 
 .blog-container h2 {
-  padding: 1.75rem 0;
+  padding: 1rem 0;
 }
 
 .blog-container p {
   line-height: 1.75rem;
-  text-align: justify;
   padding: 1rem 0;
 }
 
 .blog-container p img {
-  width: 80%;
+  width: 100%;
   display: block;
   margin: 0 auto;
   padding: 1rem 0;
@@ -39,7 +38,6 @@
 
 .blog-container blockquote {
   line-height: 1.75rem;
-  text-align: justify;
   margin: 2rem 0;
   padding: 1.5rem;
   background-color: var(--light-blue);
@@ -53,6 +51,6 @@
     padding-right: 1rem;
   }
   .blog-container h1 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
 }

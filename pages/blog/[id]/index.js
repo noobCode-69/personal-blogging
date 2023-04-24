@@ -42,7 +42,7 @@ function Blog(props) {
 
 export function getServerSideProps(context) {
   const { id } = context.params;
-  const blogContent = `# The End of Front-End Development
+  const blogContent = `# The End Of Frontend Development
   Over the past few months, I've spoken with lots of early-career devs who are getting more and more anxious about AI. They've seen the increasingly-impressive demos from tools like GPT-4, and they worry that by the time they're fluent in HTML/CSS/JS, there won't be any jobs left for them.
 
   This sentiment is all over Twitter right now:

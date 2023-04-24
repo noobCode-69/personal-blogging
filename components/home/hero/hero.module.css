@@ -73,7 +73,7 @@
 
 .curve svg {
   width: 100%;
-  fill: var(--color-background);
+  fill: white;
 }
 
 @media (max-width: 599px) {
