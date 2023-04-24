@@ -5,7 +5,6 @@ import HomeContent from "@/components/home/homeContent/homeContent";
 import Footer from "@/components/home/footer/footer";
 import Contact from "@/components/home/contact/contact";
 
-
 export default function Home(props) {
   const { blogs, populars, categories } = props;
   return (
