@@ -5,7 +5,7 @@ const links = [
   },
   {
     text: "About Me",
-    url: "/blog/1",
+    url: "/about-me",
   },
 ];
 

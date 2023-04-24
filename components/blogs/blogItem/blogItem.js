@@ -7,7 +7,7 @@ function BlogItem({ blog }) {
   const {  title, content } = blog;
   const isMobileScreen = useMediaQuery({ maxWidth: 650 });
   return (
-    <Link href={""} className={styled["blog-item-container"]}>
+    <Link href={'/blog/1'} className={styled["blog-item-container"]}>
       <h3>{title}</h3>
       {isMobileScreen ? (
         <p> {content.split(" ").slice(0, 40).join(" ")}...</p>

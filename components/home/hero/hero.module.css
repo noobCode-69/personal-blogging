@@ -43,13 +43,11 @@
 .paragraph {
   line-height: 1.5rem;
   text-align: left;
-
 }
 
-.paragraph p{
+.paragraph p {
   text-align: left;
 }
-
 
 .avatar-container {
   position: relative;
@@ -75,7 +73,7 @@
 
 .curve svg {
   width: 100%;
-  fill: white;
+  fill: var(--color-background);
 }
 
 @media (max-width: 599px) {
@@ -106,14 +104,13 @@
     font-size: calc(0.75rem + 1vw);
   }
   .paragraph {
-    text-align : left;
+    text-align: left;
   }
-  .paragraph p{
+  .paragraph p {
     text-align: left;
     font-size: 0.9rem;
     line-height: 1.5rem;
   }
-  
 }
 
 @media screen and (min-width: 800px) and (max-width: 1300px) {

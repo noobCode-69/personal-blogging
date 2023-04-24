@@ -17,7 +17,7 @@ function HomeContent(props) {
             {blogs.map((blog) => {
               const { id, title, content } = blog;
               return (
-                <Link key={id} href={"/"}>
+                <Link key={id} href={"/blog/1"}>
                   <div className={styled["blog"]}>
                     <h3>{title}</h3>
                     {isMobileScreen ? (
@@ -43,7 +43,7 @@ function HomeContent(props) {
               {populars.map((popular) => {
                 const { id, title } = popular;
                 return (
-                  <Link key={id} href={""}>
+                  <Link key={id} href={"/blog/1"}>
                     <li className={styled["popular"]}>
                       <h4>{title}</h4>
                     </li>
