@@ -9,10 +9,10 @@ function PopularCategories(props) {
       <p className={styled["heading"]}>TOP CATEGORIES</p>
       <ul className={styled["categories"]}>
         {categories.map((category) => {
-          const { id, title } = category;
+          const { _id, title } = category;
           return (
-            <li key={id} className={styled["category"]}>
-              <Link href={""}>{title}</Link>
+            <li key={_id} className={styled["category"]}>
+              <Link href={`/blogs/${title}`}>{title}</Link>
             </li>
           );
         })}

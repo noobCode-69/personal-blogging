@@ -6,7 +6,10 @@ import styled from "./homeContent.module.css";
 import PopularCategories from "../popularCategories/popularCategories";
 
 function HomeContent(props) {
-  const { blogs, populars, categories } = props;
+  console.log(props);
+  const blogs = props.blogs.featuredBlogs;
+  const categories = props.categories.categories;
+  const populars = props.populars.featuredBlogs;
   const isMobileScreen = useMediaQuery({ maxWidth: 650 });
   return (
     <Layout>
@@ -15,15 +18,15 @@ function HomeContent(props) {
           <p className={styled["heading"]}>RECENTLY RELEASED</p>
           <div className={styled["blogs-container"]}>
             {blogs.map((blog) => {
-              const { id, title, content } = blog;
+              const { _id, title, description } = blog;
               return (
-                <Link key={id} href={"/blog/1"}>
+                <Link key={_id} href={`/blog/${_id}`}>
                   <div className={styled["blog"]}>
                     <h3>{title}</h3>
                     {isMobileScreen ? (
-                      <p>{content.split(" ").slice(0, 30).join(" ")}...</p>
+                      <p>{description.split(" ").slice(0, 30).join(" ")}...</p>
                     ) : (
-                      <p>{content}</p>
+                      <p>{description}</p>
                     )}
                     <h4>Read more.</h4>
                   </div>
@@ -41,9 +44,9 @@ function HomeContent(props) {
             <p className={styled["heading"]}>POPULAR CONTENT</p>
             <ul className={styled["populars"]}>
               {populars.map((popular) => {
-                const { id, title } = popular;
+                const { _id, title } = popular;
                 return (
-                  <Link key={id} href={"/blog/1"}>
+                  <Link key={_id} href={`/blog/${_id}`}>
                     <li className={styled["popular"]}>
                       <h4>{title}</h4>
                     </li>

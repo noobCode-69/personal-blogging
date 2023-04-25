@@ -17,64 +17,16 @@ function BlogPage(props) {
   );
 }
 
-export function getServerSideProps(context) {
+export async function getServerSideProps(context) {
   const { id } = context.query;
-  const blogs = [
-    {
-      id: 1,
-      title: "The End of Front-End Development",
-      content:
-        "I used to teach React at a local coding bootcamp, and I noticed that students kept getting tripped up by the same handful of things. In this article, we're going to go through 9 of the most dastardly gotchas. I'll show you how to solve these common problems, so you can avoid a lot of potential frustration!",
-      tag: "React",
-    },
-    {
-      id: 2,
-      title: "The End of Front-End Development",
-      content:
-        "I used to teach React at a local coding bootcamp, and I noticed that students kept getting tripped up by the same handful of things. In this article, we're going to go through 9 of the most dastardly gotchas. I'll show you how to solve these common problems, so you can avoid a lot of potential frustration!",
-      tag: "React",
-    },
-    {
-      id: 3,
-      title: "The End of Front-End Development",
-      content:
-        "I used to teach React at a local coding bootcamp, and I noticed that students kept getting tripped up by the same handful of things. In this article, we're going to go through 9 of the most dastardly gotchas. I'll show you how to solve these common problems, so you can avoid a lot of potential frustration!",
-      tag: "React",
-    },
-    {
-      id: 4,
-      title: "The End of Front-End Development",
-      content:
-        "I used to teach React at a local coding bootcamp, and I noticed that students kept getting tripped up by the same handful of things. In this article, we're going to go through 9 of the most dastardly gotchas. I'll show you how to solve these common problems, so you can avoid a lot of potential frustration!",
-      tag: "Next",
-    },
-    {
-      id: 5,
-      title: "The End of Front-End Development",
-      content:
-        "I used to teach React at a local coding bootcamp, and I noticed that students kept getting tripped up by the same handful of things. In this article, we're going to go through 9 of the most dastardly gotchas. I'll show you how to solve these common problems, so you can avoid a lot of potential frustration",
-      tag: "Next",
-    },
-    {
-      id: 6,
-      title: "The End of Front-End Development",
-      content:
-        "I used to teach React at a local coding bootcamp, and I noticed that students kept getting tripped up by the same handful of things. In this article, we're going to go through 9 of the most dastardly gotchas. I'll show you how to solve these common problems, so you can avoid a lot of potential frustration!",
-      tag: "Javascript",
-    },
-    {
-      id: 7,
-      title: "The End of Front-End Development",
-      content:
-        "I used to teach React at a local coding bootcamp, and I noticed that students kept getting tripped up by the same handful of things. In this article, we're going to go through 9 of the most dastardly gotchas. I'll show you how to solve these common problems, so you can avoid a lot of potential frustration",
-      tag: "Javascript",
-    },
-  ];
+
+  let blogs = await fetch(`http://localhost:4000/api/blogs/getAllBlogs/${id}`);
+  blogs = await blogs.json();
 
   return {
     props: {
       blogs: blogs,
-      id: 'React',
+      id: id,
     },
   };
 }

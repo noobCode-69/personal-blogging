@@ -4,9 +4,9 @@ const links = [
     url: "/blogs",
   },
   {
-    text: "About Me",
-    url: "/about-me",
-  },
+    text : "About me",
+    url : "/about-me"
+  }
 ];
 
 export default links;

@@ -26,109 +26,19 @@ export default function Home(props) {
   );
 }
 
-export function getServerSideProps() {
-  const blogs = [
-    {
-      id: 1,
-      title: "The End of Front-End Development",
-      content:
-        "I used to teach React at a local coding bootcamp, and I noticed that students kept getting tripped up by the same handful of things. In this article, we're going to go through 9 of the most dastardly gotchas. I'll show you how to solve these common problems, so you can avoid a lot of potential frustration!",
-    },
-    {
-      id: 2,
-      title: "The End of Front-End Development",
-      content:
-        "I used to teach React at a local coding bootcamp, and I noticed that students kept getting tripped up by the same handful of things. In this article, we're going to go through 9 of the most dastardly gotchas. I'll show you how to solve these common problems, so you can avoid a lot of potential frustration!",
-    },
-    {
-      id: 3,
-      title: "The End of Front-End Development",
-      content:
-        "I used to teach React at a local coding bootcamp, and I noticed that students kept getting tripped up by the same handful of things. In this article, we're going to go through 9 of the most dastardly gotchas. I'll show you how to solve these common problems, so you can avoid a lot of potential frustration!",
-    },
-    {
-      id: 4,
-      title: "The End of Front-End Development",
-      content:
-        "I used to teach React at a local coding bootcamp, and I noticed that students kept getting tripped up by the same handful of things. In this article, we're going to go through 9 of the most dastardly gotchas. I'll show you how to solve these common problems, so you can avoid a lot of potential frustration!",
-    },
-    {
-      id: 5,
-      title: "The End of Front-End Development",
-      content:
-        "I used to teach React at a local coding bootcamp, and I noticed that students kept getting tripped up by the same handful of things. In this article, we're going to go through 9 of the most dastardly gotchas. I'll show you how to solve these common problems, so you can avoid a lot of potential frustration",
-    },
-    {
-      id: 6,
-      title: "The End of Front-End Development",
-      content:
-        "I used to teach React at a local coding bootcamp, and I noticed that students kept getting tripped up by the same handful of things. In this article, we're going to go through 9 of the most dastardly gotchas. I'll show you how to solve these common problems, so you can avoid a lot of potential frustration!",
-    },
-    {
-      id: 7,
-      title: "The End of Front-End Development",
-      content:
-        "I used to teach React at a local coding bootcamp, and I noticed that students kept getting tripped up by the same handful of things. In this article, we're going to go through 9 of the most dastardly gotchas. I'll show you how to solve these common problems, so you can avoid a lot of potential frustration",
-    },
-  ];
+export async function getServerSideProps() {
+  let populars = await fetch(
+    "http://localhost:4000/api/blogs/getFeaturedBlogs"
+  );
 
-  const populars = [
-    {
-      id: 1,
-      title: "The End of Front-End Development",
-    },
-    {
-      id: 2,
-      title: "An Interactive Guide to Flexbox",
-    },
-    {
-      id: 3,
-      title: "An Interactive Guide to CSS Transitions",
-    },
-    {
-      id: 4,
-      title: "An Interactive Guide to Flexbox",
-    },
-    {
-      id: 5,
-      title: "An Interactive Guide to CSS Transitions",
-    },
-    {
-      id: 6,
-      title: "An Interactive Guide to Flexbox",
-    },
-    {
-      id: 7,
-      title: "An Interactive Guide to Flexbox",
-    },
-  ];
-
-  const categories = [
-    {
-      id: 1,
-      title: "React",
-    },
-    {
-      id: 2,
-      title: "Javascript",
-    },
-    {
-      id: 3,
-      title: "CSS",
-    },
-    {
-      id: 4,
-      title: "React Query",
-    },
-    {
-      id: 5,
-      title: "Next",
-    },
-  ];
-
+  let categories = await fetch(
+    "http://localhost:4000/api/category/getAllCategory"
+  );
+  populars = await populars.json();
+  categories = await categories.json();
   return {
     props: {
-      blogs: blogs,
+      blogs: populars,
       populars: populars,
       categories: categories,
     },

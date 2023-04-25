@@ -2,7 +2,7 @@
 
 .blogs {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(475px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(475px, 1fr));
   column-gap: 2rem;
   row-gap: 3rem;
 }
