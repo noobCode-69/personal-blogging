@@ -35,8 +35,11 @@ export async function getServerSideProps(context) {
     let blogs = await fetch(
       `http://localhost:4000/api/blogs/getAllBlogs/${id}`
     );
-    blogs = await blogs.json();
 
+    if (!blogs.ok) {
+      throw new Error({});
+    }
+    blogs = await blogs.json();
     return {
       props: {
         blogs: blogs,
@@ -44,6 +47,7 @@ export async function getServerSideProps(context) {
       },
     };
   } catch (error) {
+    console.log(error);
     return {
       props: {
         error: error,

@@ -56,6 +56,10 @@ export async function getServerSideProps(context) {
     let blogContent = await fetch(
       `http://localhost:4000/api/blogs/getBlog/${id}`
     );
+    if (!blogContent.ok) {
+      throw new Error({});
+    }
+
     blogContent = await blogContent.json();
     blogContent = blogContent.blog;
     return {
