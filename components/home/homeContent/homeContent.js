@@ -6,11 +6,11 @@ import styled from "./homeContent.module.css";
 import PopularCategories from "../popularCategories/popularCategories";
 
 function HomeContent(props) {
-  console.log(props);
   const blogs = props.blogs.featuredBlogs;
   const categories = props.categories.categories;
   const populars = props.populars.featuredBlogs;
   const isMobileScreen = useMediaQuery({ maxWidth: 650 });
+
   return (
     <Layout>
       <div className={styled["content"]}>
