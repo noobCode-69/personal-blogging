@@ -55,7 +55,7 @@ export async function getServerSideProps(context) {
   const { id } = context.params;
   try {
     let blogContent = await fetch(
-      `http://localhost:4000/api/blogs/getBlog/${id}`
+      `https://perfect-fox-boot.cyclic.app/api/blogs/getBlog/${id}`
     );
     if (!blogContent.ok) {
       throw new Error({});

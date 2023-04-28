@@ -28,7 +28,9 @@ function Blogs(props) {
 
 export async function getServerSideProps() {
   try {
-    let blogs = await fetch("http://localhost:4000/api/blogs/getAllBlogs");
+    let blogs = await fetch(
+      "https://perfect-fox-boot.cyclic.app/api/blogs/getAllBlogs"
+    );
     blogs = await blogs.json();
     return {
       props: {

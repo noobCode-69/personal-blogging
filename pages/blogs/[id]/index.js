@@ -34,7 +34,7 @@ export async function getServerSideProps(context) {
 
   try {
     let blogs = await fetch(
-      `http://localhost:4000/api/blogs/getAllBlogs/${id}`
+      `https://perfect-fox-boot.cyclic.app/api/blogs/getAllBlogs/${id}`
     );
 
     if (!blogs.ok) {

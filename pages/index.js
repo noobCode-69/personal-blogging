@@ -30,11 +30,11 @@ export default function Home(props) {
 export async function getServerSideProps() {
   try {
     let populars = await fetch(
-      "http://localhost:4000/api/blogs/getFeaturedBlogs"
+      "https://perfect-fox-boot.cyclic.app/api/blogs/getFeaturedBlogs"
     );
 
     let categories = await fetch(
-      "http://localhost:4000/api/category/getAllCategory"
+      "https://perfect-fox-boot.cyclic.app/api/category/getAllCategory"
     );
     populars = await populars.json();
     categories = await categories.json();
