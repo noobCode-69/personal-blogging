@@ -1,0 +1,30 @@
+@import url("../../styles/colors.css");
+
+.error-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10rem;
+  color: var(--dark-violet);
+  gap: 1rem;
+}
+
+.message-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.error-container h1 {
+  color: var(--dark-violet);
+}
+
+.error-container a {
+  color: black;
+}
+
+.error-container a:hover {
+  color: var(--dark-violet);
+}

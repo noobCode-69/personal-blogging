@@ -4,12 +4,14 @@ import Hero from "@/components/home/hero/hero";
 import HomeContent from "@/components/home/homeContent/homeContent";
 import Footer from "@/components/home/footer/footer";
 import Contact from "@/components/home/contact/contact";
+import Error from "@/components/error/error";
 
 export default function Home(props) {
   const { blogs, populars, categories, error } = props;
 
   if (error) {
-    return <h1>!!ERROR!!</h1>;
+    console.log(error);
+    return <Error />;
   }
 
   return (

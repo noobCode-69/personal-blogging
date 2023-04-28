@@ -3,11 +3,11 @@ import Head from "next/head";
 import Layout from "@/components/layout/layout";
 import styled from "../../styles/Blogs.module.css";
 import BlogsList from "@/components/blogs/blogsList/blogsList";
-
+import Error from "@/components/error/error";
 function Blogs(props) {
   const { blogs, error } = props;
   if (error) {
-    return <h1>!!ERROR!!</h1>;
+    return <Error />;
   }
   return (
     <>

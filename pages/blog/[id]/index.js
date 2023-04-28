@@ -6,10 +6,11 @@ import rehypeRaw from "rehype-raw";
 import remarkGfm from "remark-gfm";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { nightOwl } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import Error from "@/components/error/error";
 
 function Blog({ blogContent, error }) {
   if (error) {
-    return <h1>!!ERROR!!</h1>;
+    return <Error />;
   }
 
   const markdown = blogContent.content;
